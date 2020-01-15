@@ -6,6 +6,3 @@ RUN docker-php-ext-install soap pdo_mysql bcmath zip intl gettext
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN docker-php-ext-configure intl
 RUN locale-gen sv_SE.UTF-8 && locale-gen en_US.UTF-8
-
-# docker build -t capcito/bitbucket-pipelines .
-# docker push swaner/capcito_ci
