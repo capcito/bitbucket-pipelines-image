@@ -15,6 +15,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -qy nodejs
 RUN npm install -g aws-cdk
+RUN pip3 install -U awscli
 
 RUN rm -rf /var/lib/apt/lists/*
 
